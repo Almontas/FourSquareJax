@@ -15,31 +15,24 @@ $(document).ready(function() {
             }
 
 
-    access_token = 3; 
 
-   if (access_token == 3)
-     {       
-        
-        $('.dashboardProfile').hide();   
-        $('.dashboardInfo').hide(); 
-        $('.dashboardConnect').show();   
-        $('.connect').click(function() {   
-                 
-                var url = "https://foursquare.com/oauth2/access_token";
-                    url += "?client_id="+foursquareApi.clientId;
-                    url += "&response_type=token";
-                    url += "&redirect_uri="+foursquareApi.redirectUrl;
-                    window.location = url;
-                          
-            });
-    }
-    else 
-    {
-                  $('.dashboardProfile').show();   
-                  $('.dashboardInfo').show();
-    }             $('.dashboardConnect').hide();
-
-
+if (access_token == null) {       
+    $('.dashboardProfile').hide();   
+    $('.dashboardInfo').hide(); 
+    $('.dashboardConnect').show();   
+    $('.connect').click(function() {   
+        var url = "https://foursquare.com/oauth2/access_token";
+        url += "?client_id="+foursquareApi.clientId;
+        url += "&response_type=token";
+        url += "&redirect_uri="+foursquareApi.redirectUrl;
+        window.location = url;
+    });
+}
+else {
+    $('.dashboardProfile').show();   
+    $('.dashboardInfo').show();
+    $('.dashboardConnect').hide();
+}
 
 
                 //gets parameter from above sends request back to API

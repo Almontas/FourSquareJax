@@ -75,7 +75,7 @@ body {
 
 .connect{
 	float: right;
-	width: 50%;
+	width: 100%;
 	margin: 0%;
 	padding: 0%;
 	height: 100%;
@@ -84,16 +84,21 @@ body {
 
 .connect p{
 
-	padding: .25em;
+	padding: .5em;
 	background-color: #E0ECBE;
 	border-radius: 1.5em;
-	float: right;
-	margin-right: 10%;
-	margin-top: 2%;
 	font-size: 1.5em;
-	width: 15%;
-
+	width: 25%;
+	margin: auto;
 }
+
+.connect img{
+    margin-top: 5%;
+    margin-bottom: 2%;
+	width: 25%;
+	cursor: pointer;
+}
+
 
 .logo{
 
@@ -162,7 +167,7 @@ height: 4em;
 	width: 100%;
 	height: 90%;
 	background-color: black;
-
+	text-align: center;
 
 }
 
