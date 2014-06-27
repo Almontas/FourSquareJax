@@ -12,7 +12,7 @@ var access_token;
                 clientSecret: "YDBCTHJECBNMQVFWRC1GU5RFGGPHRY4Y1VGHSVD4PLMGRKNB",
                 redirectUrl : "http://almontas.github.io/FourSquareJax/",
 
-    if (access_token.length < 1)
+    if (access_token === 0)
     {         
         $('.connect').click (function ()
             {   
@@ -28,7 +28,8 @@ var access_token;
     }
     else 
     {
-
+                  document.getElementById('dashboardProfile').style.display=='block';   
+                  document.getElementById('dashboardInfo').style.display=='bloc';  
     }           
 
 
