@@ -1,7 +1,12 @@
 
    //gets Authentication Code
 var access_token;        
-  
+    if (window.location.hash) 
+        {
+                                       
+            access_token = window.location.hash.split('=')[1];
+        }
+
 $(document).ready(function() {
     var foursquareApi = {
                 clientId: "4B4T220TQF43NIUKJAQI1DNASEOI12NBTTUNZ5YOETDDQORF",
