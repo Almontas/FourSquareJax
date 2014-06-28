@@ -21,9 +21,9 @@ if (access_token == null) {
     $('.dashboardInfo').hide(); 
     $('.dashboardConnect').show();   
     $('.connect').click(function() {   
-        var url = "https://foursquare.com/oauth2/access_token";
+        var url = "https://foursquare.com/oauth2/authenticate";
         url += "?client_id="+foursquareApi.clientId;
-        url += "&response_type=token";
+        url += "&response_type=code";
         url += "&redirect_uri="+foursquareApi.redirectUrl;
         window.location = url;
     });
