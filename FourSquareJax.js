@@ -1,12 +1,7 @@
 
    //gets Authentication Code
 var access_token;        
-    if (window.location.hash) 
-        {
-                                       
-            access_token = window.location.hash.split('=')[1];
-        }
-
+  
 $(document).ready(function() {
     var foursquareApi = {
                 clientId: "4B4T220TQF43NIUKJAQI1DNASEOI12NBTTUNZ5YOETDDQORF",
@@ -73,14 +68,6 @@ else {
                     var selfcheckin;
                     $('.checkin').html(result.response.checkins.count);
                    
-
-                    var countries;
-                    countries.text(result.response.checkins.items.venue.country); // NEED TO LOOP THROUGH THIS
-                    $('.country').append(countries);
-
-                    var cities
-                    cities.text(result.response.checkins.items.venue.city); // NEED TO LOOP THROUGH THIS
-                    $('.city').append(countries);
 
                 };
                 
