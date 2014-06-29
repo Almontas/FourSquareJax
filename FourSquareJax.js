@@ -48,7 +48,7 @@ else {
                                     };  
         
                 var result = $.ajax({
-                        url: "https://api.foursquare.com/v2/users/self/checkins?oauth_token="+54YRTPG4FH0QYTC3UCG2XPWLEAUGGCQUJ0FGTNYG4IVMV3YQ,
+                        url: "https://api.foursquare.com/v2/users/self/checkins?oauth_token="+access_token,
                         data: userrequest, //stays
                         dataType: "jsonp",  //stays
                         type: "GET"  //stays
