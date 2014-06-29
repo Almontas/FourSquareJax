@@ -33,14 +33,14 @@ else {
     $('.dashboardProfile').show();   
     $('.dashboardInfo').show();
     $('.dashboardConnect').hide();
-    getCheckin ();
+    getCheckin (access_token);
 }
 
 
                 //gets parameter from above sends request back to API
 
                 //insert function to be sent into API
-                var getCheckin = function () 
+                var getCheckin = function (access_token) 
                 {
 
                 var  userrequest = {userID: self, //stays
