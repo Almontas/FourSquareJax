@@ -29,7 +29,7 @@ if (access_token == null) {
     });
 }
 else {
-    console.log(access_token);
+    console.log("Hello this is your code: " + access_token);
     $('.dashboardProfile').show();   
     $('.dashboardInfo').show();
     $('.dashboardConnect').hide();
@@ -48,7 +48,7 @@ else {
                                     };  
         
                 var result = $.ajax({
-                        url: "https://api.foursquare.com/v2/users/self/checkins?"+access_token,  
+                        url: "https://api.foursquare.com/v2/users/self/checkins?oauth_token="+access_token,  
                         data: userrequest, //stays
                         dataType: "jsonp",  //stays
                         type: "GET"  //stays
