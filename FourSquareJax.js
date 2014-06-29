@@ -54,6 +54,8 @@ else {
                         type: "GET"  //stays
                         })
                 .done(function(result){
+                        
+                        console.log("Looks like your ajax request was sent");
                         getData(result);
                     })
                 
@@ -65,13 +67,9 @@ else {
             };
 
 
-
-
-
                 var getData = function(result)
                 {
-                    
-                    var selfcheckin;
+                     console.log("Looks like your function was fired off");
                     $('.checkin').html(result.response.checkins.count);
                    
 
