@@ -4,7 +4,7 @@ var access_token;
     if (window.location.hash) 
         {
                                        
-            access_token = window.location.hash.split('=')[1];
+           access_token = window.location.search.split('=')[1];
         }
 
 $(document).ready(function() {
@@ -29,6 +29,9 @@ if (access_token == null) {
     });
 }
 else {
+    console.log("HELLO");
+    console.log(access_token);
+    console.log(access_token);
     $('.dashboardProfile').show();   
     $('.dashboardInfo').show();
     $('.dashboardConnect').hide();
