@@ -33,7 +33,7 @@ else {
     $('.dashboardProfile').show();   
     $('.dashboardInfo').show();
     $('.dashboardConnect').hide();
-    getCheckin (access_token);
+    getCheckin ();
 }
 
 
