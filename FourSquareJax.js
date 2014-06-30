@@ -50,7 +50,7 @@ var getData = function(result) {
     var j;
     for(j = 0; j < result.length; j += 1) {
     if(result.response.checkins.items[j]["city"]) 
-    {countrycount++;}
+    {citycount++;}
     $('.city').html(citycount);
 
 
