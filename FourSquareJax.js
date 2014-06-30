@@ -42,7 +42,7 @@ else {
                 //gets parameter from above sends request back to API
 
                 //insert function to be sent into API
-                var getCheckin = function (access_token) 
+                var getCheckin = function () 
                 {
 
                 var  userrequest = {userID: self, //stays
