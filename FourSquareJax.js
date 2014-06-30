@@ -44,6 +44,7 @@ var getData = function(result) {
     if(result.response.checkins.items[i]["country"]) 
     {countrycount++;}
     $('.country').html(countrycount);
+    }
 
 
     var citycount = 0;
@@ -52,9 +53,7 @@ var getData = function(result) {
     if(result.response.checkins.items[j]["city"]) 
     {citycount++;}
     $('.city').html(citycount);
-
-
-}
+    }
 };
 
 $(document).ready(function() {
