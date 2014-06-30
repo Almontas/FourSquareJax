@@ -30,9 +30,11 @@ if (access_token == null) {
 }
 else {
     console.log("Hello this is your code: " + access_token);
+
     $('.dashboardProfile').show();   
     $('.dashboardInfo').show();
     $('.dashboardConnect').hide();
+    getCheckin();
 
 }
 
