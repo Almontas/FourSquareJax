@@ -34,7 +34,7 @@ else {
     $('.dashboardProfile').show();   
     $('.dashboardInfo').show();
     $('.dashboardConnect').hide();
-    getCheckin();
+    getCheckin(access_token);
 
 }
 
