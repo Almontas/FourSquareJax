@@ -23,7 +23,7 @@ if (access_token == null) {
     $('.connect').click(function() {   
         var url = "https://foursquare.com/oauth2/authenticate";
         url += "?client_id="+foursquareApi.clientId;
-        url += "&response_type=code";
+        url += "&response_type=token";
         url += "&redirect_uri="+foursquareApi.redirectUrl;
         window.location = url;
     });
