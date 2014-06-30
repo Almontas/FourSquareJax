@@ -4,7 +4,7 @@ var access_token;
     if (window.location.hash) 
         {
                                        
-           access_token = window.location.search.split('=')[1];
+           access_token = window.location.hash.split('=')[1];
         }
 
 $(document).ready(function() {
