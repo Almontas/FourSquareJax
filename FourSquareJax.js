@@ -42,7 +42,7 @@ var getData = function(result) {
     var i;
     for(i = 0; i < result.response.checkins.items.length; i += 1) {
     if(result.response.checkins.items[i]["country"]) 
-    {countrycount++}
+    {countrycount++;}
     $('.country').html(countrycount);
 
 
@@ -50,7 +50,7 @@ var getData = function(result) {
     var j;
     for(j = 0; j < result.response.checkins.items.length; j += 1) {
     if(result.response.checkins.items[j]["city"]) 
-    {countrycount++}
+    {countrycount++;}
     $('.city').html(citycount);
 
 
