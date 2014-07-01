@@ -123,7 +123,7 @@ var getData = function(result) {
 
 var getUserData = function(resultinfo) {
     console.log(resultinfo);
-    $('.userpic').html('<img src = ' + resultinfo.response.user.photo.suffix + '</img>');
+    $('.userpic').html('<img src = ' + 'https://irs1.4sqi.net/img/user/' + resultinfo.response.user.photo.suffix + '</img>');
     $('.username').html(resultinfo.response.user.firstName);
     $('.homecity').html(resultinfo.response.user.homeCity);
     $('.badges').html(resultinfo.response.user.badges.count + " badges");
