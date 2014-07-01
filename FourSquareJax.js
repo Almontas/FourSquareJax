@@ -92,8 +92,11 @@ var getData = function(result) {
 
     return [c, d];}
 
+   var cityResult = Unique(city);
+   for (i=0;i < cityResult[0].length;i++) {
+   console.log(cityResult[0][i]+" "+cityResult[1][i]);}
 
-   $('.city').html(city.length);
+   $('.city').html(cityResult[0].length);
 
 
    
