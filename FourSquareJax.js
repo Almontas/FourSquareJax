@@ -98,8 +98,7 @@ var getData = function(result) {
 
    $('.city').html(cityResult[0].length);
 
-
-   
+   console.log(result.response.user.firstName);
    
 };
 
