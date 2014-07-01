@@ -70,8 +70,8 @@ var getData = function(result) {
 
 
     var city = new Array();
-    for (i=0; i < items.length; i++) {
-    var newCity = items[i].venue.location.city;
+    for (j=0; j < items.length; j++) {
+    var newCity = items[j].venue.location.city;
     city.push(newCity);}
 
 
@@ -79,22 +79,22 @@ var getData = function(result) {
     var c = [], d = [], preve;
 
     city.sort();
-    for ( var i = 0; i < city.length; i++ ) {
+    for ( var j = 0; j < city.length; j++ ) {
 
-    if ( city[i] !== preve ) {
-    c.push(city[i]);
+    if ( city[j] !== preve ) {
+    c.push(city[j]);
     d.push(1);
     } else {
     d[d.length-1]++;
     }
-    preve = city[i];
+    preve = city[j];
     }
 
     return [c, d];}
 
    var cityResult = Unique(city);
-   for (i=0;i < cityResult[0].length;i++) {
-   console.log(cityResult[0][i]+" "+cityResult[1][i]);}
+   for (j=0;j < cityResult[0].length;j++) {
+   console.log(cityResult[0][j]+" "+cityResult[1][j]);}
 
    $('.city').html(city[0].length);
 
