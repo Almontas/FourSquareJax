@@ -123,10 +123,10 @@ var getData = function(result) {
 
 var getUserData = function(resultinfo) {
     console.log(resultinfo);
-    $('.userpic').html(resultinfo.response.user.photo.suffix);
+    $('.userpic').html('<img src = ' + resultinfo.response.user.photo.suffix + '</img>');
     $('.username').html(resultinfo.response.user.firstName);
     $('.homecity').html(resultinfo.response.user.homeCity);
-    $('.badges').html(resultinfo.response.user.badges.count + "badges");
+    $('.badges').html(resultinfo.response.user.badges.count + " badges");
 };
 
 
