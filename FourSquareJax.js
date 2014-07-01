@@ -38,14 +38,11 @@ var getData = function(result) {
     $('.checkin').html(result.response.checkins.count);
     
     var items = result.response.checkins.items;
-    
+    var country = new Array();
 
-   var country = new Array();
-
-   for (i=0; i < items.length; i++) {
-   var newCountry = items[i].venue.location.country;
-   country.push(newCountry); //not working 
-   }
+    for (i=0; i < items.length; i++) {
+    var newCountry = items[i].venue.location.country;
+    country.push(newCountry);}
 
 
     function showUnique(country) {
@@ -63,14 +60,45 @@ var getData = function(result) {
     prev = country[i];
     }
 
-    return [a, b];
-}
+    return [a, b];}
+
    var countryResult = showUnique(country);
    for (i=0;i < countryResult[0].length;i++) {
-    console.log(countryResult[0][i]+" "+countryResult[1][i]);
-     }
+   console.log(countryResult[0][i]+" "+countryResult[1][i]);}
 
-   console.log(countryResult[0].length);
+   $('.country').html(countryResult[0].length);
+
+
+    var city = new Array();
+    for (i=0; i < items.length; i++) {
+    var newCity = items[i].venue.location.city;
+    city.push(newCity);}
+
+
+    function Unique(city) {
+    var c = [], d = [], preve;
+
+    country.sort();
+    for ( var i = 0; i < city.length; i++ ) {
+
+    if ( city[i] !== prev ) {
+    a.push(city[i]);
+    b.push(1);
+    } else {
+    b[b.length-1]++;
+    }
+    preve = city[i];
+    }
+
+    return [c, d];}
+
+   var cityResult = Unique(city);
+   for (i=0;i < cityResult[0].length;i++) {
+   console.log(cityResult[0][i]+" "+cityResult[1][i]);}
+
+   $('.city').html(cityResult[0].length);
+
+
    
    
 };
