@@ -184,6 +184,7 @@ height: 4em;
 	vertical-align: center;
 	margin: auto;
 	border-style: solid black;
+	width: 100%;
 }
 
 .userpic img{
