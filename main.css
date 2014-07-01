@@ -198,7 +198,7 @@ display: block;
 
 .username, .homecity, .badges{
 	text-align: center;
-	font-style: #2175B9;
+	color: #2175B9;
 	margin-bottom: .5em;
 	font-size: 1.5em;
 }
