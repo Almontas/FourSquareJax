@@ -81,7 +81,7 @@ var getData = function(result) {
     country.sort();
     for ( var i = 0; i < city.length; i++ ) {
 
-    if ( city[i] !== prev ) {
+    if ( city[i] !== preve ) {
     a.push(city[i]);
     b.push(1);
     } else {
