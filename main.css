@@ -180,8 +180,9 @@ height: 4em;
 	text-align: center;
 }
 
-.userpic{
+.userpic img{
 width: 40%;
 border-radius: 50%;
+margin: auto;
 
 }
