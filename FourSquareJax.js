@@ -33,8 +33,27 @@ var getCheckin = function () {
     });
 };
 
+
+var getUser = function () {
+    var  userinformation = {
+        userID: 'self', //stays
+        v: '20140630'
+    }; 
+    var resultinfo = $.ajax({
+        url: "https://api.foursquare.com/v2/users/self?oauth_token="+access_token,
+        data: userinformation, //stays
+        dataType: "jsonp",  //stays
+        type: "GET"  //stays
+    }).done(function(resultinfo){
+        getUserData(resultinfo);
+    }).fail(function(jqXHR, error, errorThrown){ //stays common element
+        var errorElem = showError(error); //stays common element
+        $('.search-results').append(errorElem); //stays common element
+    });
+};
+
 var getData = function(result) {
-    console.log("Looks like your function was fired off");
+ 
     $('.checkin').html(result.response.checkins.count);
     
     var items = result.response.checkins.items;
@@ -98,9 +117,17 @@ var getData = function(result) {
 
    $('.city').html(cityResult[0].length);
 
-   console.log(result.response.user.firstName);
-   
 };
+
+
+var getUserData = function(resultinfo) {
+ 
+    $('.userpic').html(result.response.user.photo.suffix);
+    $('.username').html(result.response.user.firstName);
+    $('.homecity').html(result.response.user.homeCity);
+    $('.badges').html(result.response.user.badges.count + "badges");
+};
+
 
 $(document).ready(function() {
     if (access_token == null) {       
