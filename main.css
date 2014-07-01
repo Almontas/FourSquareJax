@@ -150,7 +150,10 @@ height: 4em;
 .dashboardInfo p {
 	margin-top: 8%;
 	text-align: center;
-	font-size: 2.0em;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #2175B9;
+
 }
 
 
