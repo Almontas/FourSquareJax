@@ -183,7 +183,6 @@ height: 4em;
 .userpic{
 	vertical-align: center;
 	margin: auto;
-	border: solid black;
 	width: 100%;
 }
 
@@ -195,4 +194,8 @@ margin-bottom: 5%;
 display: block;
     margin-left: auto;
     margin-right: auto 
+}
+
+.username, .homecity, .badges{
+	text-align: center;
 }
