@@ -37,8 +37,13 @@ var getData = function(result) {
     console.log("Looks like your function was fired off");
     $('.checkin').html(result.response.checkins.count);
     
-    var venue = result.response.checkins.items.venue;
-    console.log(venue);
+    var items = result.response.checkins.items;
+    console.log(items);
+
+    for (i=0; i<=items.length; i++) {
+    var country = items.venue.location[i];
+    console.log(country);
+    }
     
    
    
