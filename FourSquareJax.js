@@ -66,7 +66,7 @@ var getData = function(result) {
 }
     var countryResult = showUnique(country);
     for (i=0;i<=countryResult.length;i++) {
-    console.log(countryResult[0][i]+" "+countryResult[1][i]);
+    console.log(countryResult[0]+" "+countryResult[1]);
     }
    
    
