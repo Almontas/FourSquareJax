@@ -82,10 +82,10 @@ var getData = function(result) {
     for ( var i = 0; i < city.length; i++ ) {
 
     if ( city[i] !== preve ) {
-    a.push(city[i]);
-    b.push(1);
+    c.push(city[i]);
+    d.push(1);
     } else {
-    b[b.length-1]++;
+    d[d.length-1]++;
     }
     preve = city[i];
     }
