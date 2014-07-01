@@ -45,6 +45,7 @@ var getUser = function () {
         dataType: "jsonp",  //stays
         type: "GET"  //stays
     }).done(function(resultinfo){
+         console.log("Looks like your second ajax request was sent");
         getUserData(resultinfo);
     }).fail(function(jqXHR, error, errorThrown){ //stays common element
         var errorElem = showError(error); //stays common element
