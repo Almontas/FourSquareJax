@@ -48,7 +48,7 @@ var getData = function(result) {
    console.log(newCountry);
    }
 
-    console.log(country);
+    console.log("Countries: "+country);
 
     function showUnique(country) {
     var a = [], b = [], prev;
