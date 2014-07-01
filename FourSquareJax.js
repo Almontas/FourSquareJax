@@ -55,7 +55,7 @@ var getUser = function () {
 
 var getData = function(result) {
  
-    $('.checkin').html(result.response.checkins.count);
+    $('.checkin').html('<p>' +result.response.checkins.count + '</p>');
     
     var items = result.response.checkins.items;
     var country = new Array();
@@ -86,7 +86,7 @@ var getData = function(result) {
    for (i=0;i < countryResult[0].length;i++) {
    console.log(countryResult[0][i]+" "+countryResult[1][i]);}
 
-   $('.country').html(countryResult[0].length);
+   $('.country').html('<p>' +countryResult[0].length + '</p>');
 
 
     var city = new Array();
@@ -116,7 +116,7 @@ var getData = function(result) {
    for (j=0;j < cityResult[0].length;j++) {
    console.log(cityResult[0][j]+" "+cityResult[1][j]);}
 
-   $('.city').html(cityResult[0].length);
+   $('.city').html('<p>' + cityResult[0].length + '</p>');
 
 };
 
@@ -124,7 +124,7 @@ var getData = function(result) {
 var getUserData = function(resultinfo) {
     console.log(resultinfo);
     $('.userpic').html('<img src =' + 'https://irs1.4sqi.net/img/user/128x128' + resultinfo.response.user.photo.suffix + '>');
-    $('.username').html(resultinfo.response.user.firstName);
+    $('.username').html( resultinfo.response.user.firstName );
     $('.homecity').html(resultinfo.response.user.homeCity);
     $('.badges').html(resultinfo.response.user.badges.count + " badges");
 };
