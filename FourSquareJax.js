@@ -96,7 +96,7 @@ var getData = function(result) {
    for (j=0;j < cityResult[0].length;j++) {
    console.log(cityResult[0][j]+" "+cityResult[1][j]);}
 
-   $('.city').html(city[0].length);
+   $('.city').html(cityResult[0].length);
 
 
    
