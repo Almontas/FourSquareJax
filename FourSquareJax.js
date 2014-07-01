@@ -55,7 +55,7 @@ var getUser = function () {
 
 var getData = function(result) {
  
-    $('.checkin').html('<p>' +result.response.checkins.count + '</p>');
+    $('.checkin').html('<p>' + result.response.checkins.count + '</p>');
     
     var items = result.response.checkins.items;
     var country = new Array();
@@ -87,6 +87,7 @@ var getData = function(result) {
    console.log(countryResult[0][i]+" "+countryResult[1][i]);}
 
    $('.country').html('<p>' +countryResult[0].length + '</p>');
+   $('.fcountry').html(countryResult[0].length);
 
 
     var city = new Array();
@@ -117,6 +118,7 @@ var getData = function(result) {
    console.log(cityResult[0][j]+" "+cityResult[1][j]);}
 
    $('.city').html('<p>' + cityResult[0].length + '</p>');
+   $('.fcity').html(cityResult[0].length);
 
 };
 
@@ -134,7 +136,9 @@ $(document).ready(function() {
     if (access_token == null) {       
         $('.dashboardProfile').hide();   
         $('.dashboardInfo').hide(); 
-        $('.dashboardConnect').show();   
+        $('.dashboardConnect').show();
+         $('.footer2').hide();
+        $('.footer').show();   
         $('.connect').click(function() {   
             var url = "https://foursquare.com/oauth2/authenticate";
                 url += "?client_id="+foursquareApi.clientId;
@@ -147,6 +151,8 @@ $(document).ready(function() {
         $('.dashboardProfile').show();   
         $('.dashboardInfo').show();
         $('.dashboardConnect').hide();
+        $('.footer2').show();
+        $('.footer').hide();
         getCheckin();
         getUser();
     }
