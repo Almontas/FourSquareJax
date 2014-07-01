@@ -147,5 +147,6 @@ $(document).ready(function() {
         $('.dashboardInfo').show();
         $('.dashboardConnect').hide();
         getCheckin();
+        getUserData();
     }
 });
