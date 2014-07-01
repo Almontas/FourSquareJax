@@ -41,7 +41,7 @@ var getData = function(result) {
     console.log(items);
 
     for (i=0; i<=items.length; i++) {
-    var country = items[i].venue.location;
+    var country = items[i].venue.location.country;
     console.log(country);
     }
     
