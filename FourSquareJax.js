@@ -41,9 +41,9 @@ var getData = function(result) {
     console.log(items);
     
    
-    while(result.response.checkins.items) 
+    while(items) 
     {
-    var country = result.response.checkins.items.venue.location.country;
+    var country = items.venue.location.country;
     console.log(country);
     $('.country').html(country);
     }
