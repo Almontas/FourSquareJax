@@ -38,11 +38,11 @@ var getData = function(result) {
     $('.checkin').html(result.response.checkins.count);
 
     
-    var countrycount = 0;
-    var i;
+   
     while(result.response.checkins.items) 
     {
     var country = result.response.checkins.items.venue.location.country;
+    console.log(country);
     $('.country').html(country);
     }
 
