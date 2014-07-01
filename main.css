@@ -116,10 +116,13 @@ body {
 
 .footer{
 	background-color: #2175B9;
+	width: 100%;
+	text-align: center;
 
 }
 .footer p {
 	padding-top: 1%;
+	text-align: center;
 }
 
 .footer, .push {
