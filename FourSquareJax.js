@@ -123,10 +123,10 @@ var getData = function(result) {
 
 var getUserData = function(resultinfo) {
     console.log(resultinfo);
-    //$('.userpic').html(resultinfo.response.user.photo.suffix);
-    //$('.username').html(resultinfo.response.user.firstName);
-    //$('.homecity').html(resultinfo.response.user.homeCity);
-    //$('.badges').html(resultinfo.response.user.badges.count + "badges");
+    $('.userpic').html(resultinfo.response.user.photo.suffix);
+    $('.username').html(resultinfo.response.user.firstName);
+    $('.homecity').html(resultinfo.response.user.homeCity);
+    $('.badges').html(resultinfo.response.user.badges.count + "badges");
 };
 
 
