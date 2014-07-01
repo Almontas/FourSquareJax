@@ -126,7 +126,7 @@ var getData = function(result) {
 var getUserData = function(resultinfo) {
     console.log(resultinfo);
     $('.userpic').html('<img src =' + 'https://irs1.4sqi.net/img/user/128x128' + resultinfo.response.user.photo.suffix + '>');
-    $('.username').html( resultinfo.response.user.firstName );
+    $('.username, #fname').html( resultinfo.response.user.firstName );
     $('.homecity').html(resultinfo.response.user.homeCity);
     $('.badges').html(resultinfo.response.user.badges.count + " badges");
 };
