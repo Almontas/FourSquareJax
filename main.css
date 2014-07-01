@@ -183,6 +183,7 @@ height: 4em;
 .userpic{
 	vertical-align: center;
 	margin: auto;
+	border-style: solid black;
 }
 
 .userpic img{
