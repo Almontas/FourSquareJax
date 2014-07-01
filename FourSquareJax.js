@@ -78,7 +78,7 @@ var getData = function(result) {
     function Unique(city) {
     var c = [], d = [], preve;
 
-    country.sort();
+    city.sort();
     for ( var i = 0; i < city.length; i++ ) {
 
     if ( city[i] !== preve ) {
@@ -96,7 +96,7 @@ var getData = function(result) {
    for (i=0;i < cityResult[0].length;i++) {
    console.log(cityResult[0][i]+" "+cityResult[1][i]);}
 
-   $('.city').html(cityResult[0].length);
+   $('.city').html(city[0].length);
 
 
    
