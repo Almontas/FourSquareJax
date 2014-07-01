@@ -133,7 +133,7 @@ body {
 height: 4em;
 }
 
-.fcountry, .fcity{
+#fcountry, #fcity{
 	margin: 0%;
 	padding: 0%;
 }
