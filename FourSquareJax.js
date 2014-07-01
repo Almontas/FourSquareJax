@@ -42,13 +42,11 @@ var getData = function(result) {
 
    var country = new Array();
 
-   for (i=0; i< items.length; i++) {
+   for (i=0; i < items.length; i++) {
    var newCountry = items[i].venue.location.country;
    country.push(newCountry); //not working 
-   console.log(newCountry);
    }
 
-    console.log("Countries: "+country);
 
     function showUnique(country) {
     var a = [], b = [], prev;
