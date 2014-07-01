@@ -45,6 +45,7 @@ var getData = function(result) {
    for (i=0; i<=items.length; i++) {
    var newCountry = items[i].venue.location.country;
    country.push(newCountry); 
+   console.log(newCountry);
    }
 
     console.log(country);
