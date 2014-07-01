@@ -40,20 +40,12 @@ var getData = function(result) {
     
     var countrycount = 0;
     var i;
-    for(i = 0; i < result.length; i += 1) {
-    if(result.response.checkins.items[i]["country"]) 
-    {countrycount++;}
-    $('.country').html(countrycount);
+    while(result.response.checkins.items) 
+    {
+    var country = result.response.checkins.items.venue.location.country;
+    $('.country').html(country);
     }
 
-
-    var citycount = 0;
-    var j;
-    for(j = 0; j < result.length; j += 1) {
-    if(result.response.checkins.items[j]["city"]) 
-    {citycount++;}
-    $('.city').html(citycount);
-    }
 };
 
 $(document).ready(function() {
