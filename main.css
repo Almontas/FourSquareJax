@@ -183,7 +183,7 @@ height: 4em;
 .userpic{
 	vertical-align: center;
 	margin: auto;
-	border-style: solid black;
+	border: solid black;
 	width: 100%;
 }
 
@@ -193,5 +193,6 @@ border-radius: 50%;
 margin-left: 50%;
 margin-top: 5%;
 margin-bottom: 5%;
+border: solid black;
 
 }
