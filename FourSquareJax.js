@@ -37,13 +37,13 @@ var getData = function(result) {
     console.log("Looks like your function was fired off");
     $('.checkin').html(result.response.checkins.count);
     
-    var items = result.response.checkins.items;
+    var items = result.response.checkins.items.venue;
     console.log(items);
     
    
     while(items) 
     {
-    var id = items.venue.id;
+    var id = items.id;
     console.log(id);
     $('.country').html(id);
     }
