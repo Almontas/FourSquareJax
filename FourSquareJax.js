@@ -25,7 +25,7 @@ var getCheckin = function () {
         dataType: "jsonp",  //stays
         type: "GET"  //stays
     }).done(function(result){
-        console.log("Looks like your ajax request was sent");
+        console.log("Looks like your first ajax request was sent");
         getData(result);
     }).fail(function(jqXHR, error, errorThrown){ //stays common element
         var errorElem = showError(error); //stays common element
