@@ -40,11 +40,11 @@ var getData = function(result) {
     var items = result.response.checkins.items;
     
 
-   var country = [];
+   var country = new Array();
 
    for (i=0; i<=items.length; i++) {
    var newCountry = items[i].venue.location.country;
-   country.push(newCountry); 
+   country.push(newCountry); //not working 
    console.log(newCountry);
    }
 
