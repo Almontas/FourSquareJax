@@ -128,7 +128,7 @@ var getUserData = function(resultinfo) {
     $('.userpic').html('<img src =' + 'https://irs1.4sqi.net/img/user/128x128' + resultinfo.response.user.photo.suffix + '>');
     $('.username, #fname').html( resultinfo.response.user.firstName );
     $('.homecity').html(resultinfo.response.user.homeCity);
-    $('.badges').html(resultinfo.response.user.badges.count + " badges");
+    $('.badges').html(resultinfo.response.user.badges.count + " FourSquare badges");
 };
 
 
