@@ -47,12 +47,14 @@ var getData = function(result) {
    country.push(newCountry); 
    }
 
+    console.log(country);
 
     function showUnique(country) {
     var a = [], b = [], prev;
 
     country.sort();
     for ( var i = 0; i < country.length; i++ ) {
+
     if ( country[i] !== prev ) {
     a.push(country[i]);
     b.push(1);
