@@ -87,7 +87,7 @@ var getData = function(result) {
    console.log(countryResult[0][i]+" "+countryResult[1][i]);}
 
    $('.country').html('<p>' +countryResult[0].length + '</p>');
-   $('.fcountry').html(countryResult[0].length);
+   $('#fcountry').html(countryResult[0].length);
 
 
     var city = new Array();
@@ -118,7 +118,7 @@ var getData = function(result) {
    console.log(cityResult[0][j]+" "+cityResult[1][j]);}
 
    $('.city').html('<p>' + cityResult[0].length + '</p>');
-   $('.fcity').html(cityResult[0].length);
+   $('#fcity').html(cityResult[0].length);
 
 };
 
