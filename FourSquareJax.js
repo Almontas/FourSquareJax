@@ -69,6 +69,8 @@ var getData = function(result) {
    for (i=0;i < countryResult[0].length;i++) {
     console.log(countryResult[0][i]+" "+countryResult[1][i]);
      }
+
+   console.log(countryResult[0].length);
    
    
 };
