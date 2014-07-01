@@ -114,22 +114,27 @@ body {
 
 
 
-.footer{
+.footer .footer2{
 	background-color: #2175B9;
 	width: 100%;
 	text-align: center;
 
 }
-.footer p {
+
+
+.footer p, .footer2 p {
 	padding-top: 1%;
 	text-align: center;
 }
 
-.footer, .push {
+.footer, .push, .footer2 {
 height: 4em;
 }
 
-
+.fcountry, .fcity{
+	margin: 0%;
+	padding: 0%;
+}
 
 
 .dashboard-container{
