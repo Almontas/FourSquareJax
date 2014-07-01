@@ -36,7 +36,9 @@ var getCheckin = function () {
 var getData = function(result) {
     console.log("Looks like your function was fired off");
     $('.checkin').html(result.response.checkins.count);
-
+    
+    var items = result.response.checkins.items;
+    console.log(items);
     
    
     while(result.response.checkins.items) 
