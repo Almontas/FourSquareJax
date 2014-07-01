@@ -196,7 +196,7 @@ margin-top: 8%;
 margin-bottom: 5%;
 display: block;
     margin-left: auto;
-    margin-right: auto 
+    margin-right: auto;
 }
 
 .username, .homecity, .badges{
@@ -205,4 +205,13 @@ display: block;
 	margin-bottom: .5em;
 	font-size: 1.5em;
 	font-weight: bold;
+}
+.checkin, .country, .city{
+
+	display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1em;
+    color: #2175B9;
+
 }
