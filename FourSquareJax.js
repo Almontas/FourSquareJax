@@ -43,9 +43,9 @@ var getData = function(result) {
    
     while(items) 
     {
-    var country = items.venue.location.country;
-    console.log(country);
-    $('.country').html(country);
+    var id = items.venue.id;
+    console.log(id);
+    $('.country').html(id);
     }
 
 };
