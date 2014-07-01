@@ -206,10 +206,10 @@ display: block;
 	font-size: 1.5em;
 	font-weight: bold;
 }
-.checkin, .country, .city p{
+.checkin p, .country p, .city p{
 
 	display: block;
-    margin-top: 5%;
+    margin-top: .5em;
     font-size: 1em;
     color: #2175B9;
 
