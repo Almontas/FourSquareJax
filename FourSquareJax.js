@@ -38,13 +38,36 @@ var getData = function(result) {
     $('.checkin').html(result.response.checkins.count);
     
     var items = result.response.checkins.items;
-    console.log(items);
-
-    for (i=0; i<=items.length; i++) {
-    var country = items[i].venue.location.country;
-    console.log(country);
-    }
     
+
+   var country = [];
+
+   for (i=0; i<=items.length; i++) {
+   var newCountry = items[i].venue.location.country;
+   country.push(newCountry); 
+   }
+
+
+    function showUnique(country) {
+    var a = [], b = [], prev;
+
+    country.sort();
+    for ( var i = 0; i < country.length; i++ ) {
+    if ( country[i] !== prev ) {
+    a.push(country[i]);
+    b.push(1);
+    } else {
+    b[b.length-1]++;
+    }
+    prev = country[i];
+    }
+
+    return [a, b];
+}
+    var countryResult = showUnique(country);
+    while (i=0;i<=countryResult.length;i++) {
+    console.log(countryResult[0][i]+" "+countryResult[1][i]);
+    }
    
    
 };
